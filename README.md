@@ -20,13 +20,17 @@ npm install react-bootstrap bootstrap
 
 ## Docker Credentials Restore
 
+```
 rm ~/.docker/config.json
 docker login
+```
 
 ## Docker redeploy
 
+```
 sudo docker system prune --all --volumes
 sudo docker-compose up --build
+```
 
 ## Connect to AWS DATABASE Tutorial
 
@@ -73,4 +77,6 @@ git init
 git add .
 git commit -m ""
 git push -u origin main
+
+git pull origin
 ```
