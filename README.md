@@ -23,6 +23,11 @@ npm install react-bootstrap bootstrap
 rm ~/.docker/config.json
 docker login
 
+## Docker redeploy
+
+sudo docker system prune --all --volumes
+sudo docker-compose up --build
+
 ## Connect to AWS DATABASE Tutorial
 
 ```
@@ -58,5 +63,14 @@ https://www.cyberciti.biz/faq/how-to-install-docker-on-amazon-linux-2/
 ## Modifications
 
 ```
-App. js --> change base url to the actual instance IP
+App. js --> change base url to the actual instance IP - no port :8000
+```
+
+## Git push
+
+```
+git init
+git add .
+git commit -m ""
+git push -u origin main
 ```
